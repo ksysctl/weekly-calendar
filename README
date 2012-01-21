@@ -1,0 +1,59 @@
+* It's being used in a project but I can't include
+those styles because are not mine.
+I'm not a designer so I don't include CSS files
+but it could looks like this: sample.png
+
+* How-to use:
+
+1. Append the file.
+<script type="text/javascript" src="path/to/js/jquery.weekly.calendar.js"></script>
+
+2. Create a HTML container to put the calendar.
+<div class="calendar"></div>
+
+3. Initialize the calendar.
+<script type="text/javascript">
+    $('.calendar').WeeklyCalendar();
+    ...
+
+
+* Options:
+
+Also you can pass a set of optional parameters.
+<script type="text/javascript">
+    $('.calendar').WeeklyCalendar({
+        lang          : 'es',
+        first_date    : new Date(),
+        selected_date : 3,
+        text_previous : 'Siguiente',
+        text_next     : 'Anterior',
+        text_header   : 'Mi calendario',
+    });
+    ...
+
+lang          :
+a string, represents a language for now italian, spanish and
+english (default) are available.
+
+first_date    :
+a date object, set the start date, by default is today.
+
+selected_date :
+a integer between 0-6, it will be the button selected,
+by default is 0.
+
+text_previous :
+a string, custom text for previous button.
+
+text_next     :
+a string, custom text for next button.
+
+text_header   :
+a string, custom header text.
+
+There is included a method to get the current selected button,
+if any button is selected it returns a string like 'yyyy-m-d'
+else returns an empty string.
+
+    var selected = $('.calendar').WeeklyCalendar('getDateSelected');
+    ...
