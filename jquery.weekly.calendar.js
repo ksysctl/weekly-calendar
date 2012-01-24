@@ -30,10 +30,10 @@
             text_previous : 'Semana anterior',
             text_next     : 'Siguiente semana',
             text_header   : 'Semana de',},
-		it: { /* @TODO: translate this */
-            text_previous : 'Previous week',
-            text_next     : 'Next week',
-            text_header   : 'Week of',},
+		it: {
+            text_previous : 'Settimana precedente',
+            text_next     : 'Prossima settimana',
+            text_header   : 'Settimana di',},
 	}
 
     var defaults = {
