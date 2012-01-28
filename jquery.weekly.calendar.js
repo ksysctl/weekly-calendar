@@ -311,7 +311,7 @@
                 } catch (e) {
                     options.selected_date = defaults.selected_date;
                 }
-                if (isNaN(options.selected_date) || options.selected_date < 0 || options.selected_date > 6)
+                if (isNaN(options.selected_date) || options.selected_date < -1 || options.selected_date > 6)
                     options.selected_date = defaults.selected_date;
 
                 try {
