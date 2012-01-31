@@ -25,15 +25,15 @@
 		en: {
             text_previous : 'Previous week',
             text_next     : 'Next week',
-            text_header   : 'Week of',},
+            text_header   : 'Week of'},
 		es: {
             text_previous : 'Semana anterior',
             text_next     : 'Siguiente semana',
-            text_header   : 'Semana de',},
+            text_header   : 'Semana de'},
 		it: {
             text_previous : 'Settimana precedente',
             text_next     : 'Prossima settimana',
-            text_header   : 'Settimana di',},
+            text_header   : 'Settimana di'},
 	}
 
     var defaults = {
@@ -42,7 +42,7 @@
         selected_date : 0,
         text_previous : strings.en['text_previous'],
         text_next     : strings.en['text_next'],
-        text_header   : strings.en['text_header'],
+        text_header   : strings.en['text_header']
     };
 
     Date.prototype.monthNames = {
@@ -60,7 +60,7 @@
         'Gennaio', 'Febbraio', 'Marzo',
         'Aprile', 'Maggio', 'Giugno',
         'Luglio', 'Agosto', 'Settembre',
-        'Ottobre', 'Novembre', 'Dicembre'],
+        'Ottobre', 'Novembre', 'Dicembre']
     };
 
     Date.prototype.dayNames = {
@@ -72,7 +72,7 @@
         'Jueves', 'Viernes', 'Sabado'],
         it: [
         'Domenica', 'Lunedi', 'Martedi', 'Mercoledi',
-        'Giovedi','Venerdi', 'Sabato'],
+        'Giovedi','Venerdi', 'Sabato']
     };
 
 	function localize(options, key) {
